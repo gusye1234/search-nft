@@ -2,7 +2,9 @@
   <h1>Search Your NFTs</h1>
   <p><strong><a href="https://search-nft.vercel.app/">demo</a></strong></p>
 </div>
-Connect to your Metamask, and display all your NFTs in a second. The demo is deployed on [Vercel](https://vercel.com/) and used APIs from [alchemy](https://www.alchemy.com/).
+
+
+Connect to your Metamask, and display all your NFTs in a second. The demo is deployed on [Vercel](https://vercel.com) and used APIs from [alchemy](https://www.alchemy.com).
 
 
 
