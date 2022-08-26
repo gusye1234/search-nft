@@ -46,8 +46,11 @@ class App extends Component {
 
     constructor(props) {
         super(props)
-        this.alchemyApiKey = "APIKEYHERE"
-        this.alchemyHttpKey = "HTTPSKEYHERE"
+        this.alchemyApiKey = process.env.REACT_APP_alchemyApiKey;
+        this.alchemyHttpKey = process.env.REACT_APP_alchemyHttpKey;
+        console.log(process.env)
+        console.log(this.alchemyApiKey);
+        console.log(this.alchemyHttpKey);
         this.nft_change = this.nft_change.bind(this)
         this.nft_confirm = this.nft_confirm.bind(this)
         this.state = {
