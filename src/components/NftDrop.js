@@ -86,7 +86,6 @@ export default class NftDrop extends Component {
         this.loadNfts();
 
         if (this.state.NFTs_metadata) {
-            console.log("See me", this.state.NFTs.ownedNfts[0].title)
             if (this.state.NFTs_metadata.length === 0) {
                 return (
                     <div id="nfts" className="text-lg-center">

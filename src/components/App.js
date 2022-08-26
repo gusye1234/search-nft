@@ -27,7 +27,6 @@ class App extends Component {
 
         const ethBalance = await web3.eth.getBalance(this.state.account)
         this.setState({ ethBalance })
-        console.log(this.state.account, this.state.ethBalance)
     }
 
     async componentWillMount() {
@@ -48,9 +47,6 @@ class App extends Component {
         super(props)
         this.alchemyApiKey = process.env.REACT_APP_alchemyApiKey;
         this.alchemyHttpKey = process.env.REACT_APP_alchemyHttpKey;
-        console.log(process.env)
-        console.log(this.alchemyApiKey);
-        console.log(this.alchemyHttpKey);
         this.nft_change = this.nft_change.bind(this)
         this.nft_confirm = this.nft_confirm.bind(this)
         this.state = {
@@ -67,7 +63,6 @@ class App extends Component {
 
     render() {
         let content
-        console.log("Hardcode address:", this.state.account)
         content = <NftDrop
             name="NFT club"
             address={this.state.account}
